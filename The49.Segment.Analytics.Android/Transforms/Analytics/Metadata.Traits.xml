@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<remove-node path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='anonymousId']" />
+	<remove-node path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='userId']" />
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='address' and count(parameter)=0]" name="managedName">GetAddress</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='address' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='address' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAddress' and count(parameter)=1]" name="managedName">SetAddress</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAddress' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAddress' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='age' and count(parameter)=0]" name="managedName">GetAge</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='age' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='age' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAge' and count(parameter)=1]" name="managedName">SetAge</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAge' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAge' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='avatar' and count(parameter)=0]" name="managedName">GetAvatar</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='avatar' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='avatar' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAvatar' and count(parameter)=1]" name="managedName">SetAvatar</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAvatar' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putAvatar' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='birthday' and count(parameter)=0]" name="managedName">GetBirthday</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='birthday' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='birthday' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putBirthday' and count(parameter)=1]" name="managedName">SetBirthday</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putBirthday' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putBirthday' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='createdAt' and count(parameter)=0]" name="managedName">GetCreatedAt</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='createdAt' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='createdAt' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putCreatedAt' and count(parameter)=1]" name="managedName">SetCreatedAt</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putCreatedAt' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putCreatedAt' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='description' and count(parameter)=0]" name="managedName">GetDescription</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='description' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='description' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putDescription' and count(parameter)=1]" name="managedName">SetDescription</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putDescription' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putDescription' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='email' and count(parameter)=0]" name="managedName">GetEmail</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='email' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='email' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putEmail' and count(parameter)=1]" name="managedName">SetEmail</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putEmail' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putEmail' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='employees' and count(parameter)=0]" name="managedName">GetEmployees</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='employees' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='employees' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putEmployees' and count(parameter)=1]" name="managedName">SetEmployees</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putEmployees' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putEmployees' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='fax' and count(parameter)=0]" name="managedName">GetFax</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='fax' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='fax' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putFax' and count(parameter)=1]" name="managedName">SetFax</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putFax' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putFax' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='firstName' and count(parameter)=0]" name="managedName">GetFirstName</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='firstName' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='firstName' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putFirstName' and count(parameter)=1]" name="managedName">SetFirstName</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putFirstName' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putFirstName' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='gender' and count(parameter)=0]" name="managedName">GetGender</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='gender' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='gender' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putGender' and count(parameter)=1]" name="managedName">SetGender</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putGender' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putGender' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='industry' and count(parameter)=0]" name="managedName">GetIndustry</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='industry' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='industry' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putIndustry' and count(parameter)=1]" name="managedName">SetIndustry</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putIndustry' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putIndustry' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='lastName' and count(parameter)=0]" name="managedName">GetLastName</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='lastName' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='lastName' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putLastName' and count(parameter)=1]" name="managedName">SetLastName</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putLastName' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putLastName' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='name' and count(parameter)=0]" name="managedName">GetName</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='name' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='name' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putName' and count(parameter)=1]" name="managedName">SetName</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putName' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putName' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='phone' and count(parameter)=0]" name="managedName">GetPhone</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='phone' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='phone' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putPhone' and count(parameter)=1]" name="managedName">SetPhone</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putPhone' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putPhone' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='title' and count(parameter)=0]" name="managedName">GetTitle</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='title' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='title' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putTitle' and count(parameter)=1]" name="managedName">SetTitle</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putTitle' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putTitle' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='username' and count(parameter)=0]" name="managedName">GetUsername</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='username' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='username' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putUsername' and count(parameter)=1]" name="managedName">SetUsername</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putUsername' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putUsername' and count(parameter)=1]" name="visibility">internal</attr>
+
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='website' and count(parameter)=0]" name="managedName">GetWebsite</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='website' and count(parameter)=0]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='website' and count(parameter)=0]" name="visibility">internal</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putWebsite' and count(parameter)=1]" name="managedName">SetWebsite</attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putWebsite' and count(parameter)=1]" name="propertyName"></attr>
+	<attr path="/api/package[@name='com.segment.analytics']/class[@name='Traits']/method[@name='putWebsite' and count(parameter)=1]" name="visibility">internal</attr>
+
+</metadata>

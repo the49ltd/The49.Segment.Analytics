@@ -1,0 +1,9 @@
+﻿<metadata>
+
+	<remove-node path="/api/package[@name='com.the49.segmentio.analyticsandroid']/*[@name='BuildConfig']" />
+	
+	<!--Adjusting namespaces-->
+	<attr path="/api/package[@name='com.segment.analytics']" name="managedName">Segment</attr>
+	<attr path="/api/package[@name='com.segment.analytics.integrations']" name="managedName">Segment.Integrations</attr>
+
+</metadata>

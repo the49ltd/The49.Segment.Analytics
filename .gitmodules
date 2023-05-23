@@ -1,0 +1,3 @@
+[submodule "AnalyticsIOS/analytics-ios"]
+	path = AnalyticsIOS/analytics-ios
+	url = git@github.com:segmentio/analytics-ios.git

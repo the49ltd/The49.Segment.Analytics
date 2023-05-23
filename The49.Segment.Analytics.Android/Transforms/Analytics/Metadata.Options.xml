@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<remove-node path="/api/package[@name='com.segment.analytics']/class[@name='Options']/*[not(
+        @name='Options' or
+        @name='putContext' or
+		(@name='setIntegration' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='boolean']) or 
+		(@name='setIntegrationOptions' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.util.Map&lt;java.lang.String, java.lang.Object&gt;'])
+    )]"  />
+</metadata>

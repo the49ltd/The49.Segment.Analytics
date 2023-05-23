@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<remove-node path="/api/package[@name='com.segment.analytics']/class[@name='Analytics']/*[not(
+        @name='setSingletonInstance' or
+        @name='with' or
+        @name='identify' or
+        @name='track' or
+        @name='screen' or
+        @name='group' or
+        @name='alias'
+    )]"  />
+</metadata>

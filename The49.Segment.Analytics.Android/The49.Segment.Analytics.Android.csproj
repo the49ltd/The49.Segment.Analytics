@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<VersionPrefix>1.0.0</VersionPrefix>
+		<VersionSuffix>-alpha1</VersionSuffix>
+		
+		<Title>Segment analytics library for Android</Title>
+		<Version>$(VersionPrefix)$(VersionSuffix)</Version>
+		<Company>The49 Ltd.</Company>
+		<Description>.NET for Android bindings for Segment's Analytics library</Description>
+		<PackageProjectUrl>https://github.com/the49code/The49.Segment.Analytics</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/the49code/The49.Segment.Analytics</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>the49;segment;analytics;android</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		
+	</PropertyGroup>
+	<ItemGroup>
+		<TransformFile Include="Transforms\**\*.xml" />
+		<None Remove="Transforms\Analytics\Integrations\Metadata.Integration.xml" />
+		<None Remove="Transforms\Analytics\Integrations\Metadata.xml" />
+		<None Remove="Transforms\Analytics\Internal\Metadata.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Address.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Analytics.Builder.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Analytics.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Options.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Properties.Product.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Properties.xml" />
+		<None Remove="Transforms\Analytics\Metadata.Traits.xml" />
+		<None Remove="Transforms\Analytics\Metadata.ValueMap.xml" />
+		<None Remove="Transforms\Analytics\Metadata.xml" />
+		<LibraryProjectZip Include="..\AndroidStudio\AnalyticsAndroid\build\outputs\aar\AnalyticsAndroid-release.aar">
+			<Link>Jars\AnalyticsAndroid-release.aar</Link>
+		</LibraryProjectZip>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>

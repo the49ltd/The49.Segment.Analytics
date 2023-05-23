@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<remove-node path="/api/package[@name='com.segment.analytics.integrations']/class[@name='Integration']/*[not(
+        @name='Factory'
+    )]"  />
+</metadata>

@@ -1,0 +1,76 @@
+# Xcode
+.DS_Store
+*.swp
+*~.nib/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/
+xcuserdata/
+
+# Swift Package Manager
+.Package.resolved
+.build/
+
+# CocoaPods
+Pods/
+
+# Carthage
+/Carthage/Build/
+
+# Fastlane
+/fastlane/report.xml
+/fastlane/Preview.html
+/preview.html
+
+# Code coverage
+/xcov-report/
+
+# Compiled source
+*.o
+*.link-dest
+*.hmap
+
+# Generated files
+*.hmap
+*.ipa
+*.xcarchive
+*.dSYM.zip
+*.dSYM
+*.app.dSYM
+*.swiftmodule
+*.swiftdoc
+*.sourceinfo
+*.nib
+*.strings
+*.xib
+*.storyboardc
+*.xcassets
+*.assetcatalog
+*.playground
+*.clonedSourcePackages
+
+# Dependencies
+/SourcePackages/
+
+# SPM generated
+/*.swiftpm
+/Package.resolved
+
+# Xcode 11
+*.xcresult
+*.xcuserstate
+
+# SwiftPM
+/.build/
+
+# XCTest
+*.xctestresult
+
+# Enable ignoring unversioned files
+.vagrant/
+dist/
+bin/
+
+/build/
