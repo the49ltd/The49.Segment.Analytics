@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System.Collections;
+using Foundation;
 using SegmentAnalytics = Segment.Analytics;
 
 namespace The49.Segment.Analytics;
@@ -70,35 +71,39 @@ public partial class Analytics : IAnalytics
         SegmentAnalytics.Shared.Track(eventName, ToNSDictionary(properties), ToNSDictionary(options));
     }
 
-    static NSDictionary<NSString, NSObject>  ToNSDictionary(IDictionary<string, object> d)
+    static NSObject ToPlatform(object val)
     {
-        return NSDictionary<NSString, NSObject>.FromObjectsAndKeys(d.Values.Select(val =>
+        if (val is NSObject nsObj)
         {
-            if(val is Array arr)
+            return nsObj;
+        }
+        if (val is string s)
+        {
+            return NSObject.FromObject(s);
+        }
+        else if (val is DateTime dt)
+        {
+            var udt = dt.ToUniversalTime();
+            return (NSDate)DateTime.SpecifyKind(udt, DateTimeKind.Utc);
+        }
+        else if (val is IDictionary<string, object> dict)
+        {
+            return ToNSDictionary(dict);
+        }
+        else if (val is IEnumerable arr)
+        {
+            var l = new List<NSObject>();
+            foreach (var item in arr)
             {
-                var l = new List<NSObject>();
-                foreach (var item in arr)
-                {
-                    if (item is IDictionary<string, object> dict)
-                    {
-                        l.Add(ToNSDictionary(dict));
-                    }
-                    else
-                    {
-                        l.Add(NSObject.FromObject(item));
-                    }
-                }
-                return NSArray.FromNSObjects(l.ToArray());
-            } else if (val is IDictionary<string, object> dict)
-            {
-                return ToNSDictionary(dict);
+                l.Add(ToPlatform(item));
             }
-            else if (val is DateTime dt)
-            {
-                var udt = dt.ToUniversalTime();
-                return (NSDate)DateTime.SpecifyKind(udt, DateTimeKind.Utc);
-            }
-            return val;
-        }).ToArray(), d.Keys.ToArray());
+            return NSArray.FromNSObjects(l.ToArray());
+        }
+        return NSObject.FromObject(val);
+    }
+
+    static NSDictionary<NSString, NSObject> ToNSDictionary(IDictionary<string, object> d)
+    {
+        return NSDictionary<NSString, NSObject>.FromObjectsAndKeys(d.Values.Select(ToPlatform).ToArray(), d.Keys.ToArray());
     }
 }

@@ -13,7 +13,7 @@
 		<NoBindingEmbedding>true</NoBindingEmbedding>
 
 		<VersionPrefix>1.0.0</VersionPrefix>
-		<VersionSuffix>-alpha1</VersionSuffix>
+		<VersionSuffix>-alpha3</VersionSuffix>
 
 		<Title>Segment analytics library for iOS</Title>
 		<Version>$(VersionPrefix)$(VersionSuffix)</Version>
@@ -28,15 +28,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<NativeReference Include="../AnalyticsIOS/analytics-ios/build/Release-fat/Segment.framework" Kind="Framework" SmartLink="False" />
+		<NativeReference Include="../AnalyticsIOS/Segment.framework" Kind="Framework" SmartLink="False" />
 	</ItemGroup>
 	<ItemGroup>
 		<ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<Content Include="$(OutputPath)\The49.Segment.Analytics.iOS.resources/**">
-			<PackagePath>content\r</PackagePath>
-		</Content>
 		<Content Include="The49.Segment.Analytics.iOS.targets">
 			<PackagePath>build\The49.Segment.Analytics.iOS.targets</PackagePath>
 		</Content>

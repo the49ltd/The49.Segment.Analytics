@@ -40,7 +40,8 @@ public partial class MainPage : ContentPage
                 new Product("PROD456", "Charging Cable", 9.99)
             }
         };
-        p.Set("customProp", 67);
+        p.Set("customPropNumber", 67);
+        p.Set("customPropEnumerable", new List<int> { 0, 1, 2, 3 });
         Analytics.Default.Track("Testing", p);
     }
     private void OnIdentifyClicked(object sender, EventArgs e)
