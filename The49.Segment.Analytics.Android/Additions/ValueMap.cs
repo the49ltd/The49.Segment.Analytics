@@ -52,6 +52,15 @@ public partial class ValueMap
         {
             return FromDateTime(dt);
         }
+        else if (value is Dictionary<string, object> dict)
+        {
+            var map = new Java.Util.HashMap();
+            foreach (var keyValuePair in dict)
+            {
+                map.Put(new Java.Lang.String(keyValuePair.Key), BoxValue(keyValuePair.Value));
+            }
+            return map;
+        }
         else
         {
             // For C# classes, return the value as is
